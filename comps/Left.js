@@ -9,16 +9,19 @@ import styles from '../styles/LeftStyles';
 
 function Left(){
 
-    const [setVal, setShowVal] = useState('image url')
+    const [setVal, setShowVal] = useState('Your image url here')
+    const [setText, setShowText] = useState(false);
     
 
     return (
 
         //Need to span the background color across entire width
         <View style={styles.container}>
-        
+
+
             <Button
                 title="Set Image"
+        
                 />
 
                 <TextInput
@@ -27,7 +30,7 @@ function Left(){
                 />
 
                 <Text>
-                    Your image url
+                    {setVal}
                 </Text>
                
         </View>
