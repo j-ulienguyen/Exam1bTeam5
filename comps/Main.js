@@ -1,19 +1,17 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-import styles from './styles/AppStyles';
+import styles from '../styles/MainStyles';
 
-// Reminder to create a comps folder
 // Import comps below
-import Main from './comps/Main';
+import Right from './Right';
 
-
-function App(){
+function Main(){
 	// UI
 	return (
 		<View style={styles.container}>
-			<Main/>
+            <Right/>
 		</View>
 	)
 }
 
-export default App;
+export default Main;
