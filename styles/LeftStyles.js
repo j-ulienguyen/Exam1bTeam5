@@ -5,8 +5,11 @@ var styles = StyleSheet.create({
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        width: "100%"
+        backgroundColor:"pink" ,
+        width:"100%"
     }
+
+
 });
 
 export default styles;

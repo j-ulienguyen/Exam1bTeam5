@@ -1,17 +1,17 @@
-import React, {useState} from 'react';
-import {View, Image, TouchableOpacity} from 'react-native';
+import React from 'react';
+import {View, Text} from 'react-native';
+import Left from './Left';
+import Toast from './Toast'
 import styles from '../styles/MainStyles';
 
-import Toast from '../comps/Toast'
 
 function Main(){
-    return(
-        <View styles={styles.container}>
-            <Toast></Toast>
+    return (
+        <View style={styles.container}> 
+            <Left/>
+            <Toast/>
         </View>
-    )
+    )  
 }
-
-
 
 export default Main;

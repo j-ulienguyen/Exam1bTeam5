@@ -1,18 +1,18 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import styles from './styles/AppStyles';
-import Main from './comps/Main'
+
 
 // Reminder to create a comps folder
 // Import comps below
-
+import Main from './comps/Main';
 
 
 function App(){
 	// UI
 	return (
 		<View style={styles.container}>
-			<Main></Main>
+			<Main/>
 		</View>
 	)
 }
