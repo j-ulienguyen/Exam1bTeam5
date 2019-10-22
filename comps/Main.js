@@ -7,6 +7,7 @@ import Left from './Left';
 import Right from './Right';
 import Toast from './Toast'
 
+
 function Main(){
 	// UI
 	return (
