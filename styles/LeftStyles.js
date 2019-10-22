@@ -6,10 +6,9 @@ var styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         backgroundColor:"pink" ,
-        width:"100%"
+        width:"100%",
+        height: "100%"
     }
-
-
 });
 
 export default styles;
