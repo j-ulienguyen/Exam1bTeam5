@@ -15,7 +15,7 @@ function Main(){
             <Left/>
             <Right/>
             <Toast/>
-            <Settings/>
+            {/* <Settings/> */}
 		</View>
 	)
 }
