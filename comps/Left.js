@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
     View,
     Text,
@@ -8,6 +8,9 @@ import {
 import styles from '../styles/LeftStyles';
 
 function Left(){
+
+    const [setVal, setShowVal] = useState('image url')
+    
 
     return (
 
@@ -20,6 +23,7 @@ function Left(){
 
                 <TextInput
                 placeholder="Image Url"
+                onChangeText={(text)=>{setShowVal(text)}}
                 />
 
                 <Text>
