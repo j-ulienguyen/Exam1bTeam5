@@ -4,14 +4,17 @@ import {
     Text,
     Button,
     TextInput
-} from 'react-native'
+} from 'react-native';
 import styles from '../styles/LeftStyles';
 
 function Left(){
 
     return (
+
+        //Need to span the background color across entire width
         <View style={styles.container}>
-                <Button
+        
+            <Button
                 title="Set Image"
                 />
 
@@ -22,6 +25,7 @@ function Left(){
                 <Text>
                     Your image url
                 </Text>
+               
         </View>
     )
     

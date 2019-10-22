@@ -4,12 +4,13 @@ import {
     Text
 } from 'react-native'
 import Left from './Left';
+import styles from '../styles/MainStyles';
 
 
 function Main(){
 
     return (
-        <View style={{flex:1}}>
+        <View style={styles.container}> 
             <Left/>
         </View>
     )
