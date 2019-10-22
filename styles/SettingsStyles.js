@@ -2,12 +2,12 @@ import {StyleSheet} from 'react-native';
 
 var styles = StyleSheet.create({
     container: {
-        flex: 10,
+        flex: 1,
          justifyContent: "center",
          alignItems: "center",
          width: "100%",
+         display: "none"
          
-        
     },
     settingsbox: {
         borderWidth: 10,
