@@ -3,39 +3,58 @@ import {
     View,
     Text,
     Button,
-    TextInput
+    TextInput,
+    Image
 } from 'react-native';
 import styles from '../styles/LeftStyles';
 
 function Left(){
+    const [setVal, setShowVal] = useState("")
+    const [BGImage, setBGImage] = useState(false);
 
-    const [setVal, setShowVal] = useState('Your image url here')
-    const [setText, setShowText] = useState(false);
-    
+    if (BGImage === false){
+        bgImage = null;
+        buttonTitle = "Set Image"
+    }
+
+    if (BGImage === true){
+        bgImage = (
+            <Image
+                resizeMode = "cover"
+                style = {{
+                    width: "100%",
+                    height: "100%",
+                    zIndex: -99,
+                    position: "absolute"
+                }}
+                source = {{uri:setVal}}
+            />
+        );
+
+        buttonTitle = "Reset Image";
+    }
 
     return (
-
-        //Need to span the background color across entire width
         <View style={styles.container}>
-
-
             <Button
-                title="Set Image"
-        
-                />
+                title= {buttonTitle}
+                onPress = {()=>{
+                    setBGImage(!BGImage)
+                }}
+            />
 
-                <TextInput
+            <TextInput
                 placeholder="Image Url"
                 onChangeText={(text)=>{setShowVal(text)}}
-                />
+            />
 
-                <Text>
-                    {setVal}
-                </Text>
-               
+            <Text>
+                Your image url is {setVal}
+            </Text>
+
+            {bgImage}
         </View>
     )
-    
 }
 
 export default Left;
