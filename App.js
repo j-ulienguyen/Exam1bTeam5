@@ -12,7 +12,7 @@ function App(){
 	// UI
 	return (
 		<View style={styles.container}>
-			<Main></Main>
+			<Main/>
 		</View>
 	)
 }
