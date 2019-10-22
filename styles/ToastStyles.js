@@ -2,9 +2,10 @@ import {StyleSheet} from 'react-native';
 
 var styles = StyleSheet.create({
     container: {
-          flex: 1,
+        flex: 1,
          justifyContent:"center",
-         alignItems:"center"
+         alignItems:"center",
+         
     },
     toast: {
         backgroundColor:"yellow",
@@ -12,7 +13,6 @@ var styles = StyleSheet.create({
         borderWidth: 20,
         borderColor: "yellow",
         borderRadius: 8,
-    
     },
 
     showBtn:{
