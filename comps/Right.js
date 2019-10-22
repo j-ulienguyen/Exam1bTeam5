@@ -8,16 +8,29 @@ function Right(){
 
     // Having troubles with getting the switches to become independent
     // Not sure I need to give a switchNumber to each switch, and when one number is active it will affect the others
-    var switchNumber = null;
+    // var switchNumber = null;
 
-    if (flexSwitch === false){
+    // var switchOn = true;
+    // var switchOff = false;
 
-    }
+    // var switch1 = true;
+    // var switch2 = false;
+    // var switch3 = false;
+    // var switch4 = false;
 
+    // if (flexSwitch === false){
+
+    // }
+
+    // var flexNum = null;
+
+    // if (switch2){
+    //     flexNum = 3;
+    // }
 
 	// UI
 	return (
-		<View style={[styles.container, ]}>
+		<View style={[styles.container, {flex: flexNum}]}>
 			<Text>Normal</Text>
             <Switch
                 value = {!flexSwitch}
