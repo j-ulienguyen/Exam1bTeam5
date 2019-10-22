@@ -5,10 +5,27 @@ import {View, Text, TextInput, Button,
 import styles from '../styles/ToastStyles';
 
 function Toast(){
+
+
+    ////attempted to building function to change btns position
+    const [btnToggle, btnShowToggle] = useState(false);
+
+    var btnPos = null;
+
+    if(btnToggle === false){
+        btPos = styles.hideBtn
+    }
+
+    if(btnToggle === true){
+        btPos = styles.showBtn
+    }
+
     return(
         <View style={styles.container}>
-            <TouchableOpacity>
-            <Text style={styles.toast}>Toast</Text>
+            <TouchableOpacity
+            onPress = {()=>{btnShowToggle(!btnToggle)}}
+            >
+            <Text style={styles.toast}>Close Settings</Text>
             </TouchableOpacity>
         </View>
     )
