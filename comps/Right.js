@@ -30,7 +30,7 @@ function Right(){
 
 	// UI
 	return (
-		<View style={[styles.container, {flex: flexNum}]}>
+		<View style={styles.container}>
 			<Text>Normal</Text>
             <Switch
                 value = {!flexSwitch}
