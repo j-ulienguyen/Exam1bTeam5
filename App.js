@@ -5,13 +5,16 @@ import styles from './styles/AppStyles';
 // Reminder to create a comps folder
 // Import comps below
 
+import Main from './comps/Main';
+
 
 
 function App(){
 	// UI
 	return (
 		<View style={styles.container}>
-			<Text>Remove this line</Text>
+			<Main/>
+			
 		</View>
 	)
 }
