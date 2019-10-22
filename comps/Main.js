@@ -6,7 +6,7 @@ import styles from '../styles/MainStyles';
 import Left from './Left';
 import Right from './Right';
 import Toast from './Toast'
-
+import Settings from './Settings';
 
 function Main(){
 	// UI
@@ -15,6 +15,7 @@ function Main(){
             <Left/>
             <Right/>
             <Toast/>
+            {/* <Settings/> */}
 		</View>
 	)
 }
