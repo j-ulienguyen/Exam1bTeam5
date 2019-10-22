@@ -5,8 +5,6 @@ var styles = StyleSheet.create({
         flex: 1,
          justifyContent: "center",
          alignItems: "center",
-        //display: "none"
-
 
     },
     settingsbox: {
@@ -14,6 +12,7 @@ var styles = StyleSheet.create({
         borderColor: "grey",
         borderRadius: 8,
         backgroundColor:"grey",
+        position:"absolute"
 
 
     }
